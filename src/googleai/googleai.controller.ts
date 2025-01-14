@@ -9,4 +9,9 @@ export class GoogleaiController {
     async createPrompt(@Body('message') message:string){
         return this.googleaiService.createPrompt(message)
     }
+
+    // @Post('login')
+    // async login(@Body() dto:any){
+    //     return this.googleaiService.loginWithGoogle(dto)
+    // }
 }
